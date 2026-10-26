@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramana Pidatala: Biologist building AI for biology</title>
+<meta name="description" content="Venkataramana R Pidatala, Principal Scientific Engineering Associate at Lawrence Berkeley National Lab. Wet-lab biologist (PhD, 11 years) building AI agents and ML tools for biological research.">
+<style>
+  :root{
+    --ink:#1a2027; --muted:#5a6572; --accent:#0f766e; --accent2:#2563eb;
+    --bg:#f7f6f2; --card:#ffffff; --line:#e3e1d8; --chip:#eef4f3;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       background:var(--bg); color:var(--ink); line-height:1.6;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 20px 64px}
+  header{padding:64px 0 8px}
+  .kicker{color:var(--accent);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
+  h1{font-size:2.6rem;line-height:1.15;margin:10px 0 6px}
+  .role{font-size:1.15rem;color:var(--ink)}
+  .pitch{font-size:1.25rem;color:var(--muted);max-width:640px;margin-top:14px}
+  .links{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:9px 18px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem}
+  .btn-solid{background:var(--accent);color:#fff}
+  .btn-ghost{border:1.5px solid var(--accent);color:var(--accent)}
+  section{margin-top:44px}
+  h2{font-size:1.35rem;margin-bottom:6px}
+  h2 .bar{color:var(--accent)}
+  .sub{color:var(--muted);margin-bottom:16px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:680px){.grid{grid-template-columns:1fr} h1{font-size:2rem}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.96rem}
+  .tags{margin-top:12px;display:flex;gap:6px;flex-wrap:wrap}
+  .tag{background:var(--chip);color:var(--accent);border-radius:999px;padding:2px 10px;font-size:.78rem;font-weight:600}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 13px;font-size:.88rem}
+  .tl{border-left:2px solid var(--line);margin-left:6px;padding-left:22px}
+  .tl .item{margin-bottom:20px;position:relative}
+  .tl .item::before{content:"";position:absolute;left:-28px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+  .when{color:var(--accent);font-weight:600;font-size:.85rem}
+  .item h3{font-size:1rem}
+  .item p{color:var(--muted);font-size:.95rem}
+  .stat{display:flex;gap:28px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);
+        border-radius:14px;padding:20px;margin-top:16px}
+  .stat b{font-size:1.5rem;display:block;color:var(--accent)}
+  .stat span{color:var(--muted);font-size:.9rem}
+  footer{margin-top:56px;border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:.92rem}
+  a{color:var(--accent2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Emeryville, California</div>
+    <h1>Venkataramana R Pidatala</h1>
+    <div class="role">Principal Scientific Engineering Associate, Lawrence Berkeley National Lab (JBEI)</div>
+    <p class="pitch">Wet-lab biologist with 11 years at Berkeley Lab, now building AI agents and machine learning tools for biological research. My bench years give me the judgment; my current work gives me the agent-building half.</p>
+    <div class="links">
+      <a class="btn btn-solid" href="https://www.linkedin.com/in/venkataramana-r-pidatala">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/ramana94608">GitHub</a>
+      <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=PXjAzA4AAAAJ&amp;hl=en&amp;authuser=1">Google Scholar</a>
+    </div>
+  </header>
+
+  <section>
+    <h2><span class="bar">/</span> About</h2>
+    <p class="sub" style="color:var(--ink);max-width:700px">
+      PhD scientist in Berkeley Lab's Deconstruction Division. I started in plant cell-wall biology,
+      moved into biomass pretreatment with ionic liquids and amines, and built a feedstocks-to-fuels
+      screening platform from scratch. Since 2025 I have been adding the AI half: LLM agents,
+      fine-tuning, and honest model evaluation, with a UC Berkeley Professional Certificate in
+      Machine Learning and AI starting November 2026.
+    </p>
+    <div class="stat">
+      <div><b>11 yrs</b><span>at Berkeley Lab</span></div>
+      <div><b>35+</b><span>publications</span></div>
+      <div><b>4</b><span>promotions in 10 years</span></div>
+      <div><b>354</b><span>examples in my LoRA training set</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar">/</span> Projects</h2>
+    <p class="sub">Things I have built, not just studied.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Gemma 4 Developer Agent (Kaggle competition)</h3>
+        <p>Built and evaluated an AI agent that fixes bugs in real Python codebases. Fine-tuned the
+           31B model with a LoRA adapter trained on 354 worked examples, then ran a controlled A/B
+           test against the base agent on the same tasks. The evidence said the adapter was not the
+           lever, so the simpler base agent stayed as a final candidate.</p>
+        <div class="tags"><span class="tag">LLM agents</span><span class="tag">LoRA fine-tuning</span><span class="tag">Evaluation</span></div>
+      </div>
+      <div class="card">
+        <h3>OptiCulture</h3>
+        <p>A free, browser-based design-of-experiments tool for bioprocess work: factorial designs,
+           response surface models with ANOVA, and multi-response optimization with modern contour
+           plots. A modern successor to the desktop DOE tools my colleagues rely on.</p>
+        <div class="tags"><span class="tag">DOE</span><span class="tag">Streamlit</span><span class="tag">Bioprocess</span></div>
+      </div>
+      <div class="card">
+        <h3>Seminar-Dossier-Agent</h3>
+        <p>Open-source AI agent that prepares background dossiers for research seminars, so a host
+           walks in knowing a speaker's recent work instead of skimming abstracts in the hallway.</p>
+        <div class="tags"><span class="tag">Open source</span><span class="tag">AI agents</span><span class="tag">GitHub</span></div>
+      </div>
+      <div class="card">
+        <h3>Feedstocks-to-Fuels Screening Platform (JBEI)</h3>
+        <p>Designed and built a high-throughput screening platform from scratch, covering biomass
+           deconstruction, fermentation, and bioproduct analysis, used to screen feedstocks and
+           pretreatment conditions at scale.</p>
+        <div class="tags"><span class="tag">High-throughput screening</span><span class="tag">Fermentation</span><span class="tag">Biofuels</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar">/</span> Skills</h2>
+    <p class="sub" style="margin-bottom:4px"><strong>Biology and lab</strong></p>
+    <div class="chips">
+      <span class="chip">Design of experiments (Design-Expert)</span><span class="chip">HPLC</span>
+      <span class="chip">GC-MS (triple quadrupole)</span><span class="chip">Fermentation</span>
+      <span class="chip">Biomass pretreatment</span><span class="chip">Ionic liquid synthesis</span>
+      <span class="chip">Plant tissue culture</span><span class="chip">Gene cloning</span>
+      <span class="chip">Microscopy</span><span class="chip">High-throughput screening</span>
+    </div>
+    <p class="sub" style="margin:18px 0 4px"><strong>AI and code</strong></p>
+    <div class="chips">
+      <span class="chip">Python</span><span class="chip">pandas</span><span class="chip">scikit-learn</span>
+      <span class="chip">PyTorch</span><span class="chip">LLM agent building</span>
+      <span class="chip">LoRA fine-tuning</span><span class="chip">Model evaluation and A/B testing</span>
+      <span class="chip">Kaggle</span><span class="chip">Git and GitHub</span><span class="chip">Streamlit</span>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar">/</span> Experience</h2>
+    <div class="tl">
+      <div class="item">
+        <div class="when">2019 – present</div>
+        <h3>Biomass pretreatment, Berkeley Lab (JBEI)</h3>
+        <p>Ionic liquids and amine solvents for biomass deconstruction, feeding the feedstocks-to-fuels
+           pipeline. Promoted four times in ten years, from Research Associate to Principal Scientific
+           Engineering Associate. Go-to problem solver for stuck experiments across the division.</p>
+      </div>
+      <div class="item">
+        <div class="when">2015 – 2019</div>
+        <h3>Feedstocks Division, Berkeley Lab</h3>
+        <p>Plant cell-wall biology with the Feedstocks team: how plant cell walls are built, and how to
+           take them apart for fuels and chemicals.</p>
+      </div>
+      <div class="item">
+        <div class="when">Fall 2024</div>
+        <h3>DOE Energy I-Corps</h3>
+        <p>Customer discovery and commercialization training for lab technologies, with Anagha Krishnamoorthy.</p>
+      </div>
+      <div class="item">
+        <div class="when">PhD research</div>
+        <h3>Bioremediation</h3>
+        <p>Metabolomics and metal uptake by microbes and plants, including phytoremediation work that
+           remains my most-cited research (106 citations).</p>
+      </div>
+      <div class="item">
+        <div class="when">Earlier</div>
+        <h3>Mahyco Seeds, India</h3>
+        <p>Molecular biology: RNA silencing and transgenic crop characterization.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar">/</span> Publications</h2>
+    <p class="sub" style="color:var(--ink);max-width:700px">
+      35+ peer-reviewed papers across plant biology, metabolomics, and biomass conversion
+      (44 entries on Google Scholar in total, 1,038 citations, h-index 17, including patents on
+      biomass pretreatment). My most-cited
+      work is the 2013 vetiver grass phytoremediation paper, at 124 citations. Full list on
+      <a href="https://scholar.google.com/citations?user=PXjAzA4AAAAJ&amp;hl=en&amp;authuser=1">Google Scholar</a>
+      (verified lbl.gov profile).
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="bar">/</span> Education</h2>
+    <div class="tl">
+      <div class="item">
+        <div class="when">Starting Nov 2026</div>
+        <h3>UC Berkeley Professional Certificate in Machine Learning and AI</h3>
+        <p>Berkeley Engineering and Haas, via Emeritus. 24 modules, Python-based, with a capstone project.</p>
+      </div>
+      <div class="item">
+        <div class="when">PhD</div>
+        <h3>Doctorate in bioremediation</h3>
+        <p>Metabolomics and metal uptake by microbes and plants. Also holds a bachelor's degree in science education.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Reach me on <a href="https://www.linkedin.com/in/venkataramana-r-pidatala">LinkedIn</a> or see my code on
+    <a href="https://github.com/ramana94608">GitHub</a>. Based in Emeryville, California.
+  </footer>
+
+</div>
+</body>
+</html>
